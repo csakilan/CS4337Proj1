@@ -1,26 +1,25 @@
 #lang racket
-
-
-(include "mode.rkt")
-(require "io.rkt")
+(require "mode.rkt" "io.rkt" "util.rkt" "evaluation.rkt")
 
 (define interactive? prompt?)
 
-
 (define (repl-loop history)
-  (when interactive?
-    (display "> ")
-    (flush-output))                
-
+  (when interactive? (display "> ") (flush-output))
   (define line (read-line))
   (cond
-    [(eof-object? line) (void)]     
-    [(string=? line "quit") (void)] 
+    [(eof-object? line) (void)]
+    [(string=? line "quit") (void)]
     [else
-     
-     (when interactive?
-       (displayln (string-append "echo: " line)))
-     (repl-loop history)]))
+     (call-with-values
+       (lambda () (eval-line-basic line history))
+       (lambda (ok val)
+         (if ok
+             (let ([next-id (add1 (length history))])
+               (print-success next-id val)
+               (repl-loop (cons val history)))
+             (begin
+               (print-error)
+               (repl-loop history)))))]))
 
 (module+ main
-  (repl-loop '()))    
+  (repl-loop '()))

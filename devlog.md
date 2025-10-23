@@ -23,7 +23,12 @@ interactive: "/Applications/Racket v8.18/bin/racket" main.rkt
 
 batch: "/Applications/Racket v8.18/bin/racket" main.rkt -b
 
+#ENTRY 3: 10/23/2025, TIME: 5:15PM
 
+I have currently added a file called io.rkt which if given a success value will print the success id but if it faisl will print "Error: Invalid Expression"
+
+
+I have also connnected this to the main so that anything that isn't a number is an invalid expression, next we need to create the code that will check what type of symbol it is, and if it is a +, -, *, or /, then you need to do something special
 
 
 
