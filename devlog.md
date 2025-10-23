@@ -8,4 +8,23 @@ What I know about this project: I am going to create a prefix notation calculato
 
 another importnat part of this porject i skeeping the history of results wtih newest first in a queue(this just means you don't actually need to reverse, all I would need to do is cons the answer to a history array and save it somehow and just return the history so it should be fairly simple)
 
+
 I think I should first start off with the interactive section, then batch, then handle errors at the end and the history thign shouldn't be too hard
+
+
+#ENTRY 2: 10/23/2025, TIME: 4:35PM
+
+
+I am making it so that for now main will only contain the looping mechanism for the interactive terminal output,and everything else will branch off from this like the actual calculator section and error checking and things like this
+
+I figured out that the way to run this is through the terminal so that the -b and -batch commands work as required:
+
+interactive: "/Applications/Racket v8.18/bin/racket" main.rkt 
+
+batch: "/Applications/Racket v8.18/bin/racket" main.rkt -b
+
+
+
+
+
+

@@ -2,7 +2,7 @@
 
 
 (include "mode.rkt")
-
+(require "io.rkt")
 
 (define interactive? prompt?)
 
