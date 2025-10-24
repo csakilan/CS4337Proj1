@@ -19,6 +19,19 @@ Supported operations:
   $n - Reference to history result n
   Numbers - Any positive or negative number
 
+Example session:
+
+> 5
+> 1: 5.0
+> 10
+> 2: 10.0
+>
+> - $1 $2
+>   3: 15.0
+>
+> * $3 2
+>   4: 30.0
+
 Nested expressions work like this: + _ 2 3 4 evaluates as (2 _ 3) + 4 = 10
 
 File structure:
