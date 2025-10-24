@@ -2,6 +2,8 @@
 
 A prefix-notation calculator in Racket that evaluates expressions and keeps a history of results.
 
+Step 1. Make sure that you have racket installed
+
 How to run interactive mode:
 racket main.rkt
 
