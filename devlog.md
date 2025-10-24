@@ -45,6 +45,8 @@ I just added more code to eavaluation so that addition subtraction addition divi
 
 anotehr thing added was a divide by zero exception! this was definitely the hardest part to iplmement but we got it done!
 
+That was the main part of the calculator and everythign should be working now, next I need to figure out how to access the history and how to save it, which should be pretty easy from here, there were obviously errors with order of operation confusions like which operator comes first which I was caught on for the longest time, but got that working, and also left over checking was hard here, for example if you have + 1 2 3, then you need to check that the 3 is still there and raise an error for this, but other than this I was able to finish this in 2-3 hours.
+
 
 
 
