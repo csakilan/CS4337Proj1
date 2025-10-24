@@ -49,5 +49,11 @@ That was the main part of the calculator and everythign should be working now, n
 
 
 
+#ENTRY 6: 10/24/2025 TIME: 12:20AM
+
+Okay so final changes have been made, I believe that everythign is working as it should, one special thing is that you access history by using the $ keysymbol, and then you put which history number you want to access. You can also use two history elements and add those up together, this works as well
+
+I have also created a readme that explains everything so I will keep this final log fairly short.
 
 
+goodbye!

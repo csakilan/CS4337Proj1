@@ -1,6 +1,6 @@
 #lang racket
 (provide eval-line-basic)
-(require "util.rkt" "parsing.rkt" "operators.rkt")
+(require "parsing.rkt" "operators.rkt")
 
 (define (eval-expr chars history)
   (define chars-trimmed (skip-whitespace chars))

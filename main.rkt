@@ -1,5 +1,5 @@
 #lang racket
-(require "mode.rkt" "io.rkt" "util.rkt" "evaluation.rkt")
+(require "mode.rkt" "io.rkt" "evaluation.rkt")
 
 (define interactive? prompt?)
 
