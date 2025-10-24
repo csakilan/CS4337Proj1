@@ -32,4 +32,20 @@ I have also connnected this to the main so that anything that isn't a number is 
 
 
 
+#ENTRY 4: 10/23/2025, TIME: 6:01PM
+
+I have set up a basic parser now, to change from string-basd to character list 
+
+it will also skip whitespaces using the helper function an dthere was a problem with mode.rkt ebecause it wasn't exporting prompt? properly so I changed that up a little bit as well, and main.rk also uses require instead of include. Now this works if you give it positive numbers, negative numbers and also checks for leftovers as well
+
+#ENTRY 5: 10/23/2025 TIME: 10:34PM
+
+
+I just added more code to eavaluation so that addition subtraction addition division with the recursion works!
+
+anotehr thing added was a divide by zero exception! this was definitely the hardest part to iplmement but we got it done!
+
+
+
+
 
